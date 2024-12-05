@@ -1,15 +1,16 @@
-import React from "react"
 
 const Navbar = () => {
   return (
-    <header className="py-4 px-10 flex justify-between items-center">
+    <header className="py-3 px-10 flex justify-between items-center absolute right-0 left-0 z-10">
 
-      <div className="flex flex-grow basis-0">
-        <img className=" w-40" src="../src/assets/img/logo.png" alt="hidroequipos logo" />
+      {/* <div className="absolute left-[8px] z-10 bg-white w-[220px] h-28 rounded-b-full"></div> */}
+
+      <div className="flex flex-grow basis-0 z-20">
+        <img className="w-40" src="../src/assets/img/my-image-2.png" alt="hidroequipos logo" />
       </div>
 
       <nav>
-        <ul className="flex [&>li]:px-4">
+        <ul className="flex [&>li]:px-5 [&>li]:text-white font-medium">
           <li><a href="#">Build Pool</a></li>
           <li><a href="#">Maintenance</a></li>
           <li><a href="#">Products</a></li>

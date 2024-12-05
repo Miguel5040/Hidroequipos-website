@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+h1 {
+  /* 1 pixel black shadow to left, top, right and bottom */
+  text-shadow: -1px 0 #999, 0 1px #999, 1px 0 #999, 0 -1px #999;
+
+}
