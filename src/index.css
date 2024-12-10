@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Temporary Style */
+body{
+  margin-bottom: 200px;
+}
+
+
 
 h1 {
   /* 1 pixel black shadow to left, top, right and bottom */
