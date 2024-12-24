@@ -1,13 +1,13 @@
 
 const Hero = () => {
   return (
-    <main className='flex justify-center items-center w-screen h-screen brightness-90 bg-fixed bg-cover bg-[url("../src/assets/img/pool-hero-2.jpg")] bg-blend-darken'>
+    <main className='flex justify-center items-center h-screen brightness-90 bg-fixed bg-cover bg-center bg-[url("../src/assets/img/pool-hero-2.jpg")] bg-blend-darken -z-50'>
 
       <div className='flex flex-col gap-4 items-center'>
 
-        <header className="flex flex-col items-center">
-          <h1 className="font-bold md:text-5xl sm:text-4xl xs:text-3xl text-2xl text-white text-center">BUILT AND CARED FOR</h1>
-          <h1 className="font-bold md:text-5xl sm:text-4xl xs:text-3xl text-2xl text-white text-center">YOUR DREAM POOL PERFECTLY</h1>
+        <header className="flex flex-col items-center gap-2 mx-2">
+          <h1 className="font-bold sm:text-5xl xs:text-4xl text-3xl text-white text-center text-balance">BUILT AND CARED FOR</h1>
+          <h1 className="font-bold sm:text-5xl xs:text-4xl text-3xl text-white text-center">YOUR DREAM POOL PERFECTLY</h1>
         </header>
 
         <div className="text-white text-center md:text-lg text-base text-balance px-4 py-1 rounded-full bg-opacity-70 mb-4">Expert pool construction, maintenance, and care products in one place</div>

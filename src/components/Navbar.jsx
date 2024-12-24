@@ -1,10 +1,19 @@
+import { useState } from "react"
 
 const Navbar = () => {
+
+  const [isActive, setIsActive] = useState(false)
+
+  function changeActive() {
+    setIsActive(!isActive)
+    console.log(isActive)
+  }
+
   return (
-    <header id="navbar" className="py-3 pb-20 px-10 flex justify-between items-center absolute right-0 left-0 z-10 backdrop-brightness-90 backdrop-blur-[2px]">
+    <header id="navbar" className="py-3 pb-14 px-10 flex justify-between items-center absolute right-0 left-0 z-10 backdrop-brightness-90 backdrop-blur-[2px]">
 
       <div className="flex flex-grow basis-0 z-20">
-        <img className=" w-28" src="../src/assets/img/image-logo.png" alt="hidroequipos logo" />
+        <img className=" w-36" src="../src/assets/img/my-image-4.png" alt="hidroequipos logo" />
       </div>
 
       <nav className="lg:block hidden">
@@ -16,16 +25,24 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <div className="lg:flex lg-flex-col items-center gap-2 hidden flex-grow basis-0 justify-end">
-        <span className="text-white">🇺🇸 English</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="white" className="icon icon-tabler icons-tabler-filled icon-tabler-triangle-inverted"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M20.118 3h-16.225a2.914 2.914 0 0 0 -2.503 4.371l8.116 13.549a2.917 2.917 0 0 0 4.987 .005l8.11 -13.539a2.914 2.914 0 0 0 -2.486 -4.386z" /></svg>
+      <div className="lg:flex hidden flex-grow basis-0 justify-end">
+        <select className="bg-transparent text-white cursor-pointer" name="languages" id="">
+          <option value="english">🇺🇸 English</option>
+          <option value="spanish">🇲🇽 Español</option>
+        </select>
       </div>
 
-      <div className="lg:hidden flex flex-grow basis-0 justify-end cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
+      <div
+        className="lg:hidden flex flex-col gap-[6px] cursor-pointer w-[35px] [&>span]:rounded-2xl [&>span]:w-full [&>span]:bg-white [&>span]:h-1"
+        onClick={changeActive}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
 
     </header>
+
   )
 }
 
