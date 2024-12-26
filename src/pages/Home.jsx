@@ -4,7 +4,7 @@ import Services from '../components/Services.jsx'
 
 const Home = () => {
   return (
-    <main>
+    <main className='relative'>
       <Navbar />
       <Hero />
       <Services />

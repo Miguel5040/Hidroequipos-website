@@ -1,13 +1,6 @@
-import { useState } from "react"
+import Hamburger from "./Hamburger.jsx"
 
 const Navbar = () => {
-
-  const [isActive, setIsActive] = useState(false)
-
-  function changeActive() {
-    setIsActive(!isActive)
-    console.log(isActive)
-  }
 
   return (
     <header id="navbar" className="py-3 pb-14 px-10 flex justify-between items-center absolute right-0 left-0 z-10 backdrop-brightness-90 backdrop-blur-[2px]">
@@ -32,14 +25,7 @@ const Navbar = () => {
         </select>
       </div>
 
-      <div
-        className="lg:hidden flex flex-col gap-[6px] cursor-pointer w-[35px] [&>span]:rounded-2xl [&>span]:w-full [&>span]:bg-white [&>span]:h-1"
-        onClick={changeActive}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <Hamburger />
 
     </header>
 
