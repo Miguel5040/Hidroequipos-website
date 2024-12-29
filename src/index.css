@@ -11,6 +11,7 @@
 /* Temporary Style */
 body {
   margin-bottom: 200px;
+  overflow-x: hidden;
 }
 
 h1 {

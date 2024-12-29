@@ -16,7 +16,6 @@
   width: max-content;
   /* position: absolute; */
   right: 0;
-  z-index: 100;
   cursor: pointer;
 }
 
@@ -58,13 +57,21 @@
 }
 
 .sidebar {
-  position: absolute;
-  left: 0;
+  position: fixed;
+  right: 0;
   top: 0;
   z-index: 999;
-  /* translate: 100%; */
+  translate: 100%;
+  transition: translate var(--animation-timing);
+  background-color: white;
+  min-height: 100vh;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-gap) + 3rem);
+  background-color: cadetblue;
+  min-width: 250px;
+  z-index: 9;
+  padding-left: 2rem;
 }
-/* 
-.hamburger-menu:has(input:checked) + .sidebar {
+
+.sidebarOpen {
   translate: 0;
-} */
+}

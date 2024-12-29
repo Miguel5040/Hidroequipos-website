@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header id="navbar" className="py-3 pb-14 px-10 flex justify-between items-center absolute right-0 left-0 z-10 backdrop-brightness-90 backdrop-blur-[2px]">
 
-      <div className="flex flex-grow basis-0 z-20">
+      <div className="flex flex-grow basis-0 z-20 mr-auto">
         <img className=" w-36" src="../src/assets/img/my-image-4.png" alt="hidroequipos logo" />
       </div>
 

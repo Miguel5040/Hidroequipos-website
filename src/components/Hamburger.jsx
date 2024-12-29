@@ -1,21 +1,16 @@
 import "./hamburger.css";
+import { useSidebar } from "../context/SidebarContext";
 
 const Hamburger = () => {
+
+  const { isOpen, toggleSidebar } = useSidebar();
+
   return (
     <div className="lg:hidden flex flex-col">
 
       <label className="hamburger-menu">
-        <input type="checkbox" />
+        <input type="checkbox" checked={isOpen} onChange={toggleSidebar} />
       </label>
-
-      <aside className="sidebar">
-        <nav>
-          <div>Build Pool</div>
-          <div>Maintenance</div>
-          <div>Products</div>
-          <div>Blog</div>
-        </nav>
-      </aside>
 
     </div>
   )
