@@ -19,7 +19,7 @@ const Navbar = () => {
       </nav>
 
       <div className="lg:flex hidden flex-grow basis-0 justify-end">
-        <select className="bg-transparent text-white cursor-pointer" name="languages" id="">
+        <select className="bg-transparent text-white cursor-pointer outline-none" name="languages" id="">
           <option value="english">🇺🇸 English</option>
           <option value="spanish">🇲🇽 Español</option>
         </select>

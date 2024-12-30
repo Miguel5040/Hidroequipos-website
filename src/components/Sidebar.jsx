@@ -7,10 +7,19 @@ const Sidebar = () => {
   return (
     <aside className={`sidebar ${isOpen ? 'sidebarOpen' : ''}`}>
       <nav>
-        <div>Build Pool</div>
-        <div>Maintenance</div>
-        <div>Products</div>
-        <div>Blog</div>
+        <div>
+          <a href="#">Build Pool</a>
+          <a href="#">Maintenance</a>
+          <a href="#">Products</a>
+          <a href="#">Blog</a>
+
+        </div>
+        <div>
+          <select name="languages">
+            <option value="english">🇺🇸 English</option>
+            <option value="spanish">🇲🇽 Español</option>
+          </select>
+        </div>
       </nav>
     </aside>
   )
