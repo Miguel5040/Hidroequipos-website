@@ -5,13 +5,13 @@ const Sidebar = () => {
   const { isOpen } = useSidebar();
 
   return (
-    <aside className={`sidebar ${isOpen ? 'sidebarOpen' : ''}`}>
+    <aside className={`lg:hidden sidebar ${isOpen ? 'sidebarOpen' : ''}`}>
       <nav>
-        <div>
-          <a href="#">Build Pool</a>
-          <a href="#">Maintenance</a>
-          <a href="#">Products</a>
-          <a href="#">Blog</a>
+        <div className="">
+          <a className="hover:underline underline-offset-4" href="#">Build Pool</a>
+          <a className="hover:underline underline-offset-4" href="#">Maintenance</a>
+          <a className="hover:underline underline-offset-4" href="#">Products</a>
+          <a className="hover:underline underline-offset-4" href="#">Blog</a>
 
         </div>
         <div>

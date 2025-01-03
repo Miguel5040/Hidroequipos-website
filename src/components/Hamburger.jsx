@@ -1,15 +1,26 @@
-import "./hamburger.css";
+import { useEffect } from 'react';
 import { useSidebar } from "../context/SidebarContext";
+import "./hamburger.css";
 
 const Hamburger = () => {
 
   const { isOpen, toggleSidebar } = useSidebar();
 
+  useEffect(() => {
+
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    }
+
+  }, [isOpen])
+
   return (
     <div className="lg:hidden flex flex-col">
 
       <label className="hamburger-menu">
-        <input type="checkbox" checked={isOpen} onChange={toggleSidebar} />
+        <input className="checkbox" type="checkbox" checked={isOpen} onChange={toggleSidebar} />
       </label>
 
     </div>
