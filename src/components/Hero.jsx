@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="text-white text-center md:text-lg text-base text-balance px-4 py-1 rounded-full bg-opacity-70 mb-4">Expert pool construction, maintenance, and care products in one place</div>
 
         <span>
-          <a className="text-white px-9 py-2 bg-cyan-700 rounded-lg" href="#">Learn more</a>
+          <a className="text-white px-9 py-2.5 bg-cyan-700 rounded-lg" href="#">Learn more</a>
         </span>
 
       </div>

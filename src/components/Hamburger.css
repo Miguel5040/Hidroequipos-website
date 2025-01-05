@@ -14,9 +14,16 @@
   align-items: flex-end;
   gap: var(--hamburger-gap);
   width: max-content;
-  /* position: absolute; */
+  position: absolute;
   right: 0;
   cursor: pointer;
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid black;
+  box-shadow: 0 0 0 1px white;
 }
 
 .hamburger-menu::before,
@@ -66,7 +73,7 @@
   background-color: white;
   max-height: 100vh;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-gap) + 4rem);
-  background-color: cadetblue;
+  background-color: #0e6982;
   min-width: 250px;
   z-index: 9;
   padding-left: 2rem;
