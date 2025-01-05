@@ -17,7 +17,7 @@ const Hamburger = () => {
   }, [isOpen])
 
   return (
-    <div className="lg:hidden flex flex-col">
+    <div className="lg:hidden flex flex-col absolute top-[17px] right-[40px] z-10">
 
       <label className="hamburger-menu">
         <input className="checkbox" type="checkbox" checked={isOpen} onChange={toggleSidebar} />
