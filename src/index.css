@@ -22,3 +22,7 @@ h1 {
 #navbar {
   mask: linear-gradient(black, black, transparent);
 }
+
+#pool-system-img{
+  object-position: 50% 13%;
+}
