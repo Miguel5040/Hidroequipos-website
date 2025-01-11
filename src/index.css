@@ -9,10 +9,15 @@
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+  position: relative;
+}
+
 /* Temporary Style */
 body {
   margin-bottom: 200px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h1 {
@@ -21,4 +26,8 @@ h1 {
 
 #navbar {
   mask: linear-gradient(black, black, transparent);
+}
+
+#pool-system-img {
+  object-position: 50% 13%;
 }

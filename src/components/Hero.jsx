@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <main className='flex justify-center items-center h-screen brightness-90 bg-fixed bg-cover bg-center bg-[url("../src/assets/img/pool-hero-2.jpg")] bg-blend-darken -z-50'>
+    <main className='flex justify-center items-center h-screen brightness-90 bg-fixed bg-cover bg-center bg-[url("../src/assets/img/hero.jpg")] bg-blend-darken -z-50'>
 
       <div className='flex flex-col gap-4 items-center'>
 
