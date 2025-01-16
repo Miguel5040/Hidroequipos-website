@@ -10,14 +10,12 @@
 }
 
 html {
-  overflow-x: hidden;
   position: relative;
 }
 
 /* Temporary Style */
 body {
   margin-bottom: 200px;
-  /* overflow-x: hidden; */
 }
 
 h1 {

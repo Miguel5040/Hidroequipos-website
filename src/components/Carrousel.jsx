@@ -1,13 +1,31 @@
+import './Carrousel.css'
 
 const Carrousel = () => {
+
   return (
-    <section className="flex mt-14 flex-nowrap">
-      <img className="" src="../src/assets/img/Pentair.png" alt="" />
-      <img className="" src="../src/assets/img/Hayward.png" alt="" />
-      <img className="" src="../src/assets/img/CMP.png" alt="" />
-      <img className="" src="../src/assets/img/Jandy.png" alt="" />
-      <img className="" src="../src/assets/img/Innowater.png" alt="" />
-      <img className="" src="../src/assets/img/Fluidra.png" alt="" />
+    <section className="logo lg:px-8 px-3 mt-6">
+      <div className='carrousel'>
+        <div className="logo-slide">
+          <img src="../src/assets/img/Pentair.png" />
+          <img src="../src/assets/img/Hayward.png" />
+          <img src="../src/assets/img/CMP.png" />
+          <img src="../src/assets/img/Jandy.png" />
+          <img src="../src/assets/img/Innowater.png" />
+          <img src="../src/assets/img/Fluidra.png" />
+          <img src="../src/assets/img/Raypack.png" />
+        </div>
+
+        <div className="logo-slide">
+          <img src="../src/assets/img/Pentair.png" />
+          <img src="../src/assets/img/Hayward.png" />
+          <img src="../src/assets/img/CMP.png" />
+          <img src="../src/assets/img/Jandy.png" />
+          <img src="../src/assets/img/Innowater.png" />
+          <img src="../src/assets/img/Fluidra.png" />
+          <img src="../src/assets/img/Raypack.png" />
+        </div>
+
+      </div>
     </section>
   )
 }
