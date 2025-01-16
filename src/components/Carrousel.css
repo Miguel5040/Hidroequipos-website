@@ -2,6 +2,7 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   position: relative;
+  overflow: hidden;
 }
 
 .carrousel {
@@ -13,7 +14,7 @@
 .logo-slide {
   width: max-content;
   display: flex;
-  animation: slide 20s linear infinite;
+  animation: 10s slide infinite linear;
 }
 
 .logo-slide span {
