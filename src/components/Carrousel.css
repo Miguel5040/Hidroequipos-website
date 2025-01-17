@@ -14,7 +14,7 @@
 .logo-slide {
   width: max-content;
   display: flex;
-  animation: 10s slide infinite linear;
+  animation: 20s slide infinite linear;
 }
 
 .logo-slide span {
@@ -23,10 +23,10 @@
   height: 100%;
 }
 
-.logo-slide img {
+/* .logo-slide img {
   height: 60px;
   margin: 0 30px;
-}
+} */
 
 @keyframes slide {
   0% {
@@ -43,7 +43,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
   height: 100%;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
   z-index: 1;
@@ -54,8 +53,40 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 250px;
   height: 100%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
   z-index: 1;
+}
+
+
+@media (max-width: 640px) {
+
+  .logo::before,
+  .logo::after {
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .logo::before,
+  .logo::after {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .logo::before,
+  .logo::after {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .logo::before,
+  .logo::after {
+    width: 250px;
+  }
 }
