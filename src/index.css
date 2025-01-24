@@ -30,3 +30,15 @@ h1 {
 #pool-system-img {
   object-position: 50% 13%;
 }
+
+.fade-down {
+  height: 75px;
+  background: rgb(245, 246, 255);
+  background: linear-gradient(180deg, rgba(245, 246, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.fade-up {
+  height: 75px;
+  background: rgb(245, 246, 255);
+  background: linear-gradient(0deg, rgba(245, 246, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
