@@ -2,7 +2,7 @@ import Card from './Card';
 
 const Services2 = () => {
   return (
-    <section className="mt-6 px-3 mb-1">
+    <section className="px-3 mb-1">
       <h2 className="text-3xl text-center text-pretty mb-8">We give you everything you need</h2>
       <main className='flex lg:flex-row flex-col justify-center gap-6'>
         <Card
