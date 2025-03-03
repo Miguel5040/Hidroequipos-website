@@ -13,7 +13,9 @@ const Navbar = () => {
     <header id="navbar" className="py-3 pb-14 px-10 flex justify-between items-center absolute right-0 left-0 z-[9] backdrop-brightness-90 backdrop-blur-[2px]">
 
       <div className="flex flex-grow basis-0 z-20 mr-auto">
-        <img className=" w-36" src="../src/assets/img/my-image-2.png" alt="hidroequipos logo" />
+        <a href="#">
+          <img className=" w-28" src="../src/assets/img/logo-original.png" alt="hidroequipos logo" />
+        </a>
       </div>
 
       <nav className="lg:block hidden">
@@ -23,9 +25,9 @@ const Navbar = () => {
             opacity: 0
           })}
           className="relative flex font-medium">
-          <Tab setPosition={setPosition} link={"building-pool"}>Building Pool</Tab>
-          <Tab setPosition={setPosition} link={"maintenance"}>Maintenance</Tab>
-          <Tab setPosition={setPosition} link={"products"}>Products</Tab>
+          <Tab setPosition={setPosition} link={"building-pool"}>Services</Tab>
+          <Tab setPosition={setPosition} link={"maintenance"}>About us</Tab>
+          <Tab setPosition={setPosition} link={"products"}>Pay online</Tab>
           <Tab setPosition={setPosition} link={"blog"}>Blog</Tab>
 
           <Cursor position={position} />

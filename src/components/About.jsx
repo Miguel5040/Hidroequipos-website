@@ -3,8 +3,8 @@ const About = () => {
   return (
     <>
       <div className="fade-up"></div>
-      <section className="bg-[#F5F6FF] lg:px-16 px-6 lg:pb-10 pb-3 overflow-x-hidden flex lg:flex-col md:flex-row flex-col lg:gap-0 md:gap-6 gap-0">
-        <header className="flex lg:flex-row flex-col justify-between items-start gap-6">
+      <section className="bg-[#F5F6FF] lg:px-16 px-6 lg:pb-10 pb-3 overflow-x-hidden flex lg:flex-col md:flex-row flex-col lg:gap-0 md:gap-10 gap-0">
+        <header className="flex lg:flex-row flex-col justify-between items-start gap-8">
           <aside className="flex flex-col gap-5 max-w-[450px]">
             <h4 className="text-md mt-5 font-medium text-sky-700">Why choose us</h4>
             <h2 className="text-4xl text-balance">We build the best swimming pools</h2>

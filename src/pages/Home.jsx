@@ -24,7 +24,7 @@ const Home = () => {
       <Design />
       <Carrousel />
       <About />
-      <Services2 />
+      {/* <Services2 /> */}
       <Contact />
       <Footer />
     </main >

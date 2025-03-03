@@ -3,7 +3,7 @@ import './Carrousel.css'
 const Carrousel = () => {
 
   return (
-    <section className="logo lg:px-8 px-3 my-6">
+    <section className="logo lg:px-8 px-3 sm:my-6">
       <div className='carrousel [&_img]:lg:h-[60px] [&_img]:lg:mx-[30px] [&_img]:sm:h-[40px] [&_img]:sm:mx-[20px] [&_img]:h-[30px] [&_img]:mx-[15px]'>
         <div className="logo-slide">
           <img src="../src/assets/img/Pentair.png" />

@@ -1,6 +1,6 @@
 :root {
-  --bar-widht: 50px;
-  --bar-height: 7px;
+  --bar-widht: 40px;
+  --bar-height: 5px;
   --hamburger-gap: 6px;
   --background: white;
   --animation-timing: 200ms ease-in-out;
