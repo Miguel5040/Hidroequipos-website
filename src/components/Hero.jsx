@@ -1,16 +1,20 @@
+import { useTranslation } from "react-i18next"
+
 
 const Hero = () => {
+  const { t } = useTranslation()
+
   return (
     <main className='flex justify-center items-center h-screen brightness-90 bg-fixed bg-cover bg-center bg-[url("../src/assets/img/hero.jpeg")] bg-blend-darken -z-50'>
 
       <div className='flex flex-col gap-4 items-center'>
 
         <header className="flex flex-col items-center mx-2 leading-10">
-          <h1 className="font-bold sm:text-5xl xs:text-4xl text-3xl text-white text-center text-balance">We design and build</h1>
-          <h1 className="font-bold sm:text-5xl xs:text-4xl text-3xl text-white text-center">the pool of your dreams</h1>
+          <h1 className="font-bold sm:text-5xl xs:text-4xl text-3xl text-white text-center text-balance">{t('upperHero')}</h1>
+          <h1 className="font-bold sm:text-5xl xs:text-4xl text-3xl text-white text-center">{t('lowerHero')}</h1>
         </header>
 
-        <div className="text-white text-center md:text-lg text-base text-balance px-4 py-1 rounded-full bg-opacity-70 mb-4 font-semibold">Expert pool construction, maintenance, and care products in one place</div>
+        <div className="text-white text-center md:text-lg text-base text-balance px-4 py-1 rounded-full bg-opacity-70 mb-4 font-semibold">{t('subHero')}</div>
 
         {/* <span>
           <a className="text-white px-9 py-2.5 bg-cyan-700 rounded-lg" href="#">Learn more</a>

@@ -1,13 +1,22 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import i18n from '../assets/utils/i18n'
 
 const Navbar = () => {
+
+  const { t } = useTranslation()
 
   const [position, setPosition] = useState({
     left: 0,
     width: 0,
     opacity: 0,
   })
+
+  function changeLanguage(e) {
+    i18n.changeLanguage(e.target.value)
+  }
+
 
   return (
     <header id="navbar" className="py-3 pb-14 px-10 flex justify-between items-center absolute right-0 left-0 z-[9] backdrop-brightness-90 backdrop-blur-[2px]">
@@ -25,19 +34,22 @@ const Navbar = () => {
             opacity: 0
           })}
           className="relative flex font-medium">
-          <Tab setPosition={setPosition} link={"building-pool"}>Services</Tab>
-          <Tab setPosition={setPosition} link={"maintenance"}>About us</Tab>
-          <Tab setPosition={setPosition} link={"products"}>Pay online</Tab>
-          <Tab setPosition={setPosition} link={"blog"}>Blog</Tab>
+          <Tab setPosition={setPosition} link={"#"}>{t('navbar1')}</Tab>
+          <Tab setPosition={setPosition} link={"#"}>{t('navbar2')}</Tab>
+          <Tab setPosition={setPosition} link={"#"}>{t('navbar3')}</Tab>
+          <Tab setPosition={setPosition} link={"#contact"}>{t('navbar4')}</Tab>
 
           <Cursor position={position} />
         </ul>
       </nav>
 
       <div className="lg:flex hidden flex-grow basis-0 justify-end">
-        <select className="bg-transparent text-white cursor-pointer outline-none" name="languages" id="">
-          <option value="english">🇺🇸 English</option>
-          <option value="spanish">🇲🇽 Español</option>
+        <select
+          name="languages"
+          className="bg-transparent text-white cursor-pointer outline-none"
+          onChange={changeLanguage}>
+          <option value="en">🇺🇸 English</option>
+          <option value="es">🇲🇽 Español</option>
         </select>
       </div>
 

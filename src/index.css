@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  /* font-family: 'Mansion-Neue', sans-serif; */
   font-family: 'noto-sans';
 }
 
@@ -42,26 +41,6 @@ h1 {
 }
 
 /* Fonts */
-
-@font-face {
-  font-family: 'MansionNeue';
-  src: url('../src/assets/fonts/MaisonNeue.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'MansionNeue-Bold';
-  src: url('../src/assets/fonts/MaisonNeue-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'OrpheusPro';
-  src: url('../src/assets/fonts/OrpheusPro.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Trajan-Regular';
-  src: url('../src/assets/fonts/Trajan-Regular.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'noto-sans';
