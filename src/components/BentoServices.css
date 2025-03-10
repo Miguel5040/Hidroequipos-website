@@ -1,0 +1,22 @@
+.card-container {
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.5s, background-position 0.5s;
+  border-radius: 6px;
+}
+
+.card-container:hover {
+  background-size: 110%;
+  background-position: center;
+}
+
+.card-container .link-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity linear 0.5s;
+}
+
+.card-container:hover .link-container {
+  visibility: visible;
+  opacity: 1;
+}

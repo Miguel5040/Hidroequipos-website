@@ -4,7 +4,6 @@ import Services from '../components/Services.jsx'
 import Design from '../components/Design.jsx'
 import Carrousel from '../components/Carrousel.jsx'
 import About from '../components/About.jsx'
-import Services2 from '../components/Services2.jsx'
 import Contact from '../components/Contact.jsx'
 import Footer from '../components/Footer.jsx'
 import Sidebar from '../components/Sidebar.jsx'
@@ -24,7 +23,6 @@ const Home = () => {
       <Design />
       <Carrousel />
       <About />
-      {/* <Services2 /> */}
       <Contact />
       <Footer />
     </main >

@@ -10,13 +10,13 @@ const Footer = () => {
         <div className="flex md:flex-row flex-col justify-between md:gap-0 gap-6 items-center">
 
           <aside className="flex sm:flex-col xs:flex-row flex-col sm:items-start items-center justify-between xs:gap-0 gap-4">
-            <img className="h-10 object-contain" src="../src/assets/img/logo2.png" alt="logo de hidroequipos" />
+            <img className="h-10 object-contain" src="../src/assets/img/logos/hidro-logo.svg" alt="logo de hidroequipos" />
           </aside>
 
           <nav className="flex gap-8 font-light text-[0.9rem]">
-            <a href="#">{t('navbar1')}</a>
-            <a href="#">{t('navbar2')}</a>
-            <a href="#">{t('navbar3')}</a>
+            <a href="/services">{t('navbar1')}</a>
+            <a href="/about">{t('navbar2')}</a>
+            <a href="/pay-online">{t('navbar3')}</a>
             <a href="#contact">{t('navbar4')}</a>
           </nav>
 

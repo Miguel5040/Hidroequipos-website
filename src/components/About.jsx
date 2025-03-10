@@ -16,7 +16,7 @@ const About = () => {
             <a className="text-white px-3 py-1.5 bg-cyan-700 rounded-lg w-fit text-sm mt-4" href="#contact">{t('aboutButton')}</a>
           </aside>
           <div className="md:max-w-[500px] w-full rounded-lg overflow-hidden lg:h-[400px] h-[300px]">
-            <img className="w-full h-full object-cover object-center" src="../src/assets/img/empleado.jpeg" alt="Foto de oficina Hidroequipos" />
+            <img className="w-full h-full object-cover object-center" src="../src/assets/img/empleado.webp" alt="Foto de oficina Hidroequipos" />
           </div>
         </header>
 
