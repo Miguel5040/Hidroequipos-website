@@ -4,6 +4,7 @@ import Hamburger from "../components/Hamburger"
 import { SidebarProvider } from "../context/SidebarContext"
 import BentoServices from "../components/BentoServices"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const Services = () => {
   return (
@@ -15,6 +16,7 @@ const Services = () => {
       </SidebarProvider>
       <Header />
       <BentoServices />
+      <Footer />
     </main>
   )
 }

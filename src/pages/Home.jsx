@@ -4,11 +4,11 @@ import Services from '../components/Services.jsx'
 import Design from '../components/Design.jsx'
 import Carrousel from '../components/Carrousel.jsx'
 import About from '../components/About.jsx'
-import Contact from '../components/Contact.jsx'
 import Footer from '../components/Footer.jsx'
 import Sidebar from '../components/Sidebar.jsx'
 import Hamburger from '../components/Hamburger.jsx'
 import { SidebarProvider } from '../context/SidebarContext.jsx'
+import Information from '../components/Information.jsx'
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
       <Design />
       <Carrousel />
       <About />
-      <Contact />
+      <Information />
       <Footer />
     </main >
   )

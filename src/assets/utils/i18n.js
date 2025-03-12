@@ -41,7 +41,13 @@ const resources = {
       email: "Email",
       phone: "Phone",
       message: "Message",
-      send: "Send"
+      send: "Send",
+      phoneNumber: "Call now",
+      informationTitle: "Where can you find us?",
+      servicesPageUpperTitle: "Transforming dreams into",
+      servicesPageLowerTitle: "aquatic reailities",
+      servicesPageSubTitle: "Services",
+      servicesHoverCard: "See more"
     }
   },
   es: {
@@ -80,7 +86,13 @@ const resources = {
       email: "Correo electrónico",
       phone: "Teléfono",
       message: "Mensaje",
-      send: "Enviar"
+      send: "Enviar",
+      phoneNumber: "Llama ahora",
+      informationTitle: "¿Donde nos puedes encontrar?",
+      servicesPageUpperTitle: "Transformamos la alberca de",
+      servicesPageLowerTitle: "tus sueños en realidad",
+      servicesPageSubTitle: "Servicios",
+      servicesHoverCard: "Conoce mas"
     }
   }
 };
