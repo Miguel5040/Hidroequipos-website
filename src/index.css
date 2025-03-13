@@ -1,44 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-family: 'noto-sans';
+@layer base {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'noto-sans';
+  }
+
+  html {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    text-shadow: -1px 0 #999, 0 1px #999, 1px 0 #999, 0 -1px #999;
+    font-family: 'mulish';
+  }
+
+  #navbar {
+    mask: linear-gradient(black, black, transparent);
+  }
+
+  #pool-system-img {
+    object-position: 50% 90%;
+  }
+
+  .fade-down {
+    height: 75px;
+    background: rgb(245, 246, 255);
+    background: linear-gradient(180deg, rgba(245, 246, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+
+  .fade-up {
+    height: 75px;
+    background: rgb(245, 246, 255);
+    background: linear-gradient(0deg, rgba(245, 246, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+
 }
 
-html {
-  position: relative;
-  overflow-x: hidden;
+/* Breakpoints  */
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
 }
 
-h1 {
-  text-shadow: -1px 0 #999, 0 1px #999, 1px 0 #999, 0 -1px #999;
-  font-family: 'mulish';
-}
-
-#navbar {
-  mask: linear-gradient(black, black, transparent);
-}
-
-#pool-system-img {
-  object-position: 50% 90%;
-}
-
-.fade-down {
-  height: 75px;
-  background: rgb(245, 246, 255);
-  background: linear-gradient(180deg, rgba(245, 246, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-}
-
-.fade-up {
-  height: 75px;
-  background: rgb(245, 246, 255);
-  background: linear-gradient(0deg, rgba(245, 246, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-}
 
 /* Fonts */
 
