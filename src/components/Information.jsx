@@ -7,7 +7,7 @@ const Information = () => {
   return (
     <section className="px-6 pb-8">
       <div>
-        <h2 className="sm:text-4xl text-3xl text-center">{t("informationTitle")}</h2>
+        <h2 className="sm:text-4xl text-3xl font-medium text-center">{t("informationTitle")}</h2>
       </div>
       <div className="max-w-[800px] mx-auto mt-10">
         <div className="flex md:flex-row flex-col md:justify-between justify-center items-center md:gap-4 gap-12">

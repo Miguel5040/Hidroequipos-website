@@ -35,7 +35,7 @@ const Navbar = () => {
         <a href="/">
           <img className=" w-28"
             src={`${location ? "../src/assets/img/logos/logo-original.webp" : "../src/assets/img/logos/hidro-logo.svg"}`}
-            alt="hidroequipos logo" />
+            alt="Logo de Hidroequipos" />
         </a>
       </div>
 
@@ -48,8 +48,8 @@ const Navbar = () => {
           className="relative flex font-medium">
           <Tab setPosition={setPosition} link={"/services"}>{t('navbar1')}</Tab>
           <Tab setPosition={setPosition} link={"/about"}>{t('navbar2')}</Tab>
-          <Tab setPosition={setPosition} link={"pay-online"}>{t('navbar3')}</Tab>
-          <Tab setPosition={setPosition} link={"#contact"}>{t('navbar4')}</Tab>
+          <Tab setPosition={setPosition} link={"/pay-online"}>{t('navbar3')}</Tab>
+          <Tab setPosition={setPosition} link={"/contact"}>{t('navbar4')}</Tab>
 
           <Cursor position={position} />
         </ul>

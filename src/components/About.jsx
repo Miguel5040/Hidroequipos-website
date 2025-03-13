@@ -22,22 +22,22 @@ const About = () => {
 
         <footer className="grid lg:grid-cols-4 grid-cols-1 gap-8 mt-10 items-start">
           <div>
-            <img className="max-h-[50px] mb-1" src="../src/assets/img/trusted.svg" alt="" />
+            <img className="max-h-[50px] mb-1" src="../src/assets/img/trusted.svg" alt="Trusted Icon" />
             <h5 className="text-lg font-medium mb-2">{t('aboutTitleValue1')}</h5>
             <p className="text-sm">{t('aboutTextValue1')}</p>
           </div>
           <div>
-            <img className="max-h-[50px] mb-1" src="../src/assets/img/honesty.svg" alt="" />
+            <img className="max-h-[50px] mb-1" src="../src/assets/img/honesty.svg" alt="Honesty Icon" />
             <h5 className="text-lg font-medium mb-2">{t('aboutTitleValue2')}</h5>
             <p className="text-sm">{t('aboutTextValue2')}</p>
           </div>
           <div>
-            <img className="max-h-[50px] mb-1" src="../src/assets/img/passion.svg" alt="" />
+            <img className="max-h-[50px] mb-1" src="../src/assets/img/passion.svg" alt="Passion Icon" />
             <h5 className="text-lg font-medium mb-2">{t('aboutTitleValue3')}</h5>
             <p className="text-sm">{t('aboutTextValue3')}</p>
           </div>
           <div>
-            <img className="max-h-[50px] mb-1" src="../src/assets/img/experience.svg" alt="" />
+            <img className="max-h-[50px] mb-1" src="../src/assets/img/experience.svg" alt="Experience Icon" />
             <h5 className="text-lg font-medium mb-2">{t('aboutTitleValue4')}</h5>
             <p className="text-sm">{t('aboutTextValue4')}</p>
           </div>

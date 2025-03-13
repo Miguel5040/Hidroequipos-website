@@ -15,10 +15,10 @@ const Sidebar = () => {
     <aside className={`lg:hidden sidebar ${isOpen ? 'sidebarOpen' : ''}`}>
       <nav>
         <div className="">
-          <a className="hover:underline underline-offset-4" href="#">{t('navbar1')}</a>
-          <a className="hover:underline underline-offset-4" href="#">{t('navbar2')}</a>
-          <a className="hover:underline underline-offset-4" href="#">{t('navbar3')}</a>
-          <a className="hover:underline underline-offset-4" href="#">{t('navbar4')}</a>
+          <a className="hover:underline underline-offset-4" href="/services">{t('navbar1')}</a>
+          <a className="hover:underline underline-offset-4" href="/about">{t('navbar2')}</a>
+          <a className="hover:underline underline-offset-4" href="/pay-online">{t('navbar3')}</a>
+          <a className="hover:underline underline-offset-4" href="/contact">{t('navbar4')}</a>
 
         </div>
         <div>
