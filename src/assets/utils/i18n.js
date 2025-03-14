@@ -45,11 +45,13 @@ const resources = {
       phoneNumber: "Call now",
       informationTitle: "Where can you find us?",
       servicesPageUpperTitle: "Transforming dreams into",
-      servicesPageLowerTitle: "aquatic reailities",
+      servicesPageLowerTitle: "aquatic realities",
+      servicesPageFullTitle: "Transforming dreams into aquatic realities",
       servicesPageSubTitle: "Services",
       servicesHoverCard: "See more"
     }
   },
+
   es: {
     translation: {
       upperHero: "Construimos y diseñamos",
@@ -91,6 +93,7 @@ const resources = {
       informationTitle: "¿Donde nos puedes encontrar?",
       servicesPageUpperTitle: "Transformamos la alberca de",
       servicesPageLowerTitle: "tus sueños en realidad",
+      servicesPageFullTitle: "Transformamos la alberca de tus sueños en realidad",
       servicesPageSubTitle: "Servicios",
       servicesHoverCard: "Conoce mas"
     }
@@ -101,7 +104,7 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+    lng: localStorage.getItem('language') || "en", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
     // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
     // if you're using a language detector, do not define the lng option
 

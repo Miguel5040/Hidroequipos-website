@@ -9,17 +9,17 @@ const Sidebar = () => {
 
   function changeLanguage(e) {
     i18n.changeLanguage(e.target.value)
+    localStorage.setItem('language', e.target.value)
   }
 
   return (
     <aside className={`lg:hidden sidebar ${isOpen ? 'sidebarOpen' : ''}`}>
       <nav>
-        <div className="">
+        <div>
           <a className="hover:underline underline-offset-4" href="/services">{t('navbar1')}</a>
           <a className="hover:underline underline-offset-4" href="/about">{t('navbar2')}</a>
           <a className="hover:underline underline-offset-4" href="/pay-online">{t('navbar3')}</a>
           <a className="hover:underline underline-offset-4" href="/contact">{t('navbar4')}</a>
-
         </div>
         <div>
           <select

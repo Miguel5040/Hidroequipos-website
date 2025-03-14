@@ -5,7 +5,7 @@ const Information = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="px-6 pb-8">
+    <section className="px-6 pb-8 text-[#333]">
       <div>
         <h2 className="sm:text-4xl text-3xl font-medium text-center">{t("informationTitle")}</h2>
       </div>

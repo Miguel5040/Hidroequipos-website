@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex md:flex-row flex-col justify-between md:gap-0 gap-6 items-center">
 
           <aside className="flex sm:flex-col xs:flex-row flex-col sm:items-start items-center justify-between xs:gap-0 gap-4">
-            <img className="h-10 object-contain" src="../src/assets/img/logos/hidro-logo.svg" alt="logo de Hidroequipos" />
+            <img className="h-10 object-contain" src="../src/assets/img/logos/hidroequipos-logo.svg" alt="logo de Hidroequipos" />
           </aside>
 
           <nav className="flex gap-8 font-light text-[0.9rem]">

@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router'
@@ -6,9 +6,11 @@ import i18n from '../assets/utils/i18n'
 
 const Navbar = () => {
 
+  let location = true;
+
   const { t } = useTranslation()
 
-  let location = true;
+  const [language, setLangugage] = useState('')
 
   const [position, setPosition] = useState({
     left: 0,
@@ -22,7 +24,13 @@ const Navbar = () => {
 
   function changeLanguage(e) {
     i18n.changeLanguage(e.target.value)
+    localStorage.setItem('language', e.target.value)
+    setLangugage(e.target.value)
   }
+
+  useEffect(() => {
+    setLangugage(localStorage.getItem('language'))
+  }, [])
 
 
   return (
@@ -34,7 +42,7 @@ const Navbar = () => {
       <div className="flex flex-grow basis-0 z-20 mr-auto">
         <a href="/">
           <img className=" w-28"
-            src={`${location ? "../src/assets/img/logos/logo-original.webp" : "../src/assets/img/logos/hidro-logo.svg"}`}
+            src={`${location ? "../src/assets/img/logos/hidroequipos-logo-blanco.webp" : "../src/assets/img/logos/hidroequipos-logo.svg"}`}
             alt="Logo de Hidroequipos" />
         </a>
       </div>
@@ -61,7 +69,8 @@ const Navbar = () => {
           className={`bg-transparent 
             ${location ? "text-white" : "text-black"} 
             cursor-pointer outline-none`}
-          onChange={changeLanguage}>
+          onChange={changeLanguage}
+          value={language}>
           <option value="en">🇺🇸 English</option>
           <option value="es">🇲🇽 Español</option>
         </select>
