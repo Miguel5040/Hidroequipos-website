@@ -9,9 +9,9 @@ const Hero = () => {
 
       <div className='flex flex-col gap-4 items-center'>
 
-        <header className="flex flex-col items-center mx-2 leading-10">
-          <h1 className="font-bold sm:text-5xl xs:text-4xl text-3xl text-white text-center text-balance">{t('upperHero')}</h1>
-          <h1 className="font-bold sm:text-5xl xs:text-4xl text-3xl text-white text-center">{t('lowerHero')}</h1>
+        <header className="flex flex-col items-center mx-2">
+          <h1 className="sm:text-6xl xs:text-5xl text-3xl text-white text-center text-balance sm:mb-2 xs:mb-0.5">{t('upperHero')}</h1>
+          <h1 className="sm:text-6xl xs:text-5xl text-3xl text-white text-center">{t('lowerHero')}</h1>
         </header>
 
         <div className="text-white text-center md:text-lg text-base text-balance px-4 py-1 rounded-full bg-opacity-70 mb-4 font-semibold">{t('subHero')}</div>

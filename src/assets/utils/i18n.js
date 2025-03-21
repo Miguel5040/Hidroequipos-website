@@ -48,7 +48,12 @@ const resources = {
       servicesPageLowerTitle: "aquatic realities",
       servicesPageFullTitle: "Transforming dreams into aquatic realities",
       servicesPageSubTitle: "Services",
-      servicesHoverCard: "See more"
+      servicesHoverCard: "See more",
+      contactPageUpperTitle: "Your dream pool",
+      contactPageLowerTitle: "starts with a conversation",
+      contactPageFullTitle: "Your dream pool starts with a conversation",
+      contactPageSubTitle: "Contact",
+      carrouselTitle: "We only use high quality products",
     }
   },
 
@@ -60,7 +65,7 @@ const resources = {
       navbar2: "Nosotros",
       navbar3: "Pagar en línea",
       navbar4: "Contacto",
-      subHero: "Productos expertos en construcción, mantenimiento y cuidado de albercas en un solo lugar",
+      subHero: "Expertos en construcción, mantenimiento y cuidado de albercas en un solo lugar",
       servicesTitle: "Empresa de Albercas Más Recomendada en Los Cabos",
       servicesSubTitle: "Construcción, mantenimiento y reparación de albercas en Los Cabos",
       imageTextTitle: "Construcción de albercas",
@@ -95,7 +100,12 @@ const resources = {
       servicesPageLowerTitle: "tus sueños en realidad",
       servicesPageFullTitle: "Transformamos la alberca de tus sueños en realidad",
       servicesPageSubTitle: "Servicios",
-      servicesHoverCard: "Conoce mas"
+      servicesHoverCard: "Conoce mas",
+      contactPageUpperTitle: "Tu alberca soñada",
+      contactPageLowerTitle: "empieza con una conversación",
+      contactPageFullTitle: "Tu alberca soñada empieza con una conversación",
+      contactPageSubTitle: "Contacto",
+      carrouselTitle: "Solamente usamos los mejores productos",
     }
   }
 };

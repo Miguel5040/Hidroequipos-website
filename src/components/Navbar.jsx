@@ -67,7 +67,7 @@ const Navbar = () => {
         <select
           name="languages"
           className={`bg-transparent 
-            ${location ? "text-white" : "text-black"} 
+            ${location ? "text-white" : "text-[#333]"} 
             cursor-pointer outline-none`}
           onChange={changeLanguage}
           value={language}>
@@ -108,8 +108,8 @@ const Tab = ({ children, setPosition, link }) => {
         })
       }}
 
-      className={`relative z-10 px-5 py-1.5 
-      ${location ? "text-white" : "text-black"} 
+      className={`relative z-10 px-5 py-1.5
+      ${location ? "text-white" : "text-[#333]"}
       cursor-pointer`}>
       {children}
     </a>
@@ -121,8 +121,9 @@ const Cursor = ({ position }) => {
   return (
     <motion.div
       animate={position}
-      className="absolute z-[9] h-full w-24 rounded-md bg-[#0e6982]"></motion.div>
+      className="absolute z-[9] h-full w-24 rounded-md bg-[#1aa3c8]"></motion.div>
   )
 }
 
 export default Navbar
+

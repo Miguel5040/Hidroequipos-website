@@ -13,7 +13,7 @@ const Footer = () => {
             <img className="h-10 object-contain" src="../src/assets/img/logos/hidroequipos-logo.svg" alt="logo de Hidroequipos" />
           </aside>
 
-          <nav className="flex gap-8 font-light text-[0.9rem]">
+          <nav className="flex gap-8 font-light text-[0.9rem] text-[#333]">
             <a href="/services">{t('navbar1')}</a>
             <a href="/about">{t('navbar2')}</a>
             <a href="/pay-online">{t('navbar3')}</a>
