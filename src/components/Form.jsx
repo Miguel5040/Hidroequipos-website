@@ -24,7 +24,7 @@ const Form = () => {
   }
 
   return (
-    <section className="flex lg:pl-20 md:pl-12 md:px-0 px-2 md:py-8 py-6 items-center md:justify-start justify-center w-full mt-6 bg-[url('../src/assets/img/footer-alberca.webp')] bg-center bg-cover bg-no-repeat" id="contact">
+    <section className="flex lg:pl-20 md:pl-12 md:px-0 px-2 md:py-8 py-6 mb-20 items-center md:justify-start justify-center w-full mt-6 bg-[url('../src/assets/img/footer-alberca.webp')] bg-center bg-cover bg-no-repeat" id="contact">
       <div className="flex flex-col items-center justify-start md:w-[600px] w-full md:max-w-none max-w-[550px] p-6 bg-white rounded-lg">
         <h5 className="w-full text-start text-2xl font-medium text-[#333]">{t('contactTitle')}</h5>
         <form className="flex flex-col w-full mt-4 gap-5" onSubmit={sendEmail} id='contact-form' name='contact-form'>

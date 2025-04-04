@@ -16,27 +16,29 @@ const Carrousel = () => {
 
         <div className='carrousel [&_img]:lg:h-[42px] [&_img]:lg:mx-[50px] [&_img]:sm:h-[36px] [&_img]:sm:mx-[35px] [&_img]:h-[30px] [&_img]:mx-[25px]'>
           <div className="logo-slide">
-            <img src="../src/assets/img/Pentair.png" alt='Logo de Pentair' />
-            <img src="../src/assets/img/Hayward.png" alt='Logo de Hayward' />
-            <img src="../src/assets/img/Raypack.png" alt='Logo de Raypack' />
-            <img src="../src/assets/img/Jandy.png" alt='Logo de Jandy' />
-            <img src="../src/assets/img/Interwater.png" alt='Logo de Interwater' />
-            <img src="../src/assets/img/Fluidra.png" alt='Logo de Fluidra' />
-            <img src="../src/assets/img/Innowater.png" alt='Logo de Innowater' />
-            <img src="../src/assets/img/CMP.png" alt='Logo de CMP' />
-            <img src="../src/assets/img/Staride.png" alt='Logo de Staride' />
+            <img src="../src/assets/img/Pentair.png" alt='Logo Pentair' />
+            <img src="../src/assets/img/Hayward.png" alt='Logo Hayward' />
+            <img src="../src/assets/img/Raypack.png" alt='Logo Raypack' />
+            <img src="../src/assets/img/Jandy.png" alt='Logo Jandy' />
+            <img src="../src/assets/img/Interwater.png" alt='Logo Interwater' />
+            <img src="../src/assets/img/Fluidra.png" alt='Logo Fluidra' />
+            <img src="../src/assets/img/Innowater.png" alt='Logo Innowater' />
+            <img src="../src/assets/img/CMP.png" alt='Logo CMP' />
+            <img src="../src/assets/img/Staride.png" alt='Logo Staride' />
+            <img src="../src/assets/img/vetrovenezia.png" alt='Logo Vetrovenezia' />
           </div>
 
           <div className="logo-slide">
-            <img src="../src/assets/img/Pentair.png" alt='Logo de Pentair' />
-            <img src="../src/assets/img/Hayward.png" alt='Logo de Hayward' />
-            <img src="../src/assets/img/Raypack.png" alt='Logo de Raypack' />
-            <img src="../src/assets/img/Jandy.png" alt='Logo de Jandy' />
-            <img src="../src/assets/img/Interwater.png" alt='Logo de Interwater' />
-            <img src="../src/assets/img/Fluidra.png" alt='Logo de Fluidra' />
-            <img src="../src/assets/img/Innowater.png" alt='Logo de Innowater' />
-            <img src="../src/assets/img/CMP.png" alt='Logo de CMP' />
-            <img src="../src/assets/img/Staride.png" alt='Logo de Staride' />
+            <img src="../src/assets/img/Pentair.png" alt='Logo Pentair' />
+            <img src="../src/assets/img/Hayward.png" alt='Logo Hayward' />
+            <img src="../src/assets/img/Raypack.png" alt='Logo Raypack' />
+            <img src="../src/assets/img/Jandy.png" alt='Logo Jandy' />
+            <img src="../src/assets/img/Interwater.png" alt='Logo Interwater' />
+            <img src="../src/assets/img/Fluidra.png" alt='Logo Fluidra' />
+            <img src="../src/assets/img/Innowater.png" alt='Logo Innowater' />
+            <img src="../src/assets/img/CMP.png" alt='Logo CMP' />
+            <img src="../src/assets/img/Staride.png" alt='Logo Staride' />
+            <img src="../src/assets/img/vetrovenezia.png" alt='Logo Vetrovenezia' />
           </div>
 
         </div>

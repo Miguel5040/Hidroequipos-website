@@ -4,6 +4,7 @@ import Hamburger from "../components/Hamburger"
 import { SidebarProvider } from "../context/SidebarContext"
 import Header from "../components/Header"
 import Form from "../components/Form"
+import Information from "../components/Information"
 import Footer from "../components/Footer"
 
 const Contact = () => {
@@ -16,6 +17,7 @@ const Contact = () => {
       </SidebarProvider>
       <Header />
       <Form />
+      <Information />
       <Footer />
     </main>
   )

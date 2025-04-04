@@ -68,7 +68,7 @@ const Navbar = () => {
           name="languages"
           className={`bg-transparent 
             ${location ? "text-white" : "text-[#333]"} 
-            cursor-pointer outline-none`}
+            cursor-pointer`}
           onChange={changeLanguage}
           value={language}>
           <option value="en">🇺🇸 English</option>

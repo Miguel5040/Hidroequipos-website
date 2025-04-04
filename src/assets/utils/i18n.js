@@ -54,6 +54,16 @@ const resources = {
       contactPageFullTitle: "Your dream pool starts with a conversation",
       contactPageSubTitle: "Contact",
       carrouselTitle: "We only use high quality products",
+      aboutIntroduction: "We design, build, and maintain high-quality pools, offering expert solutions for residential and commercial projects. From construction to water care, we ensure excellence, durability, and crystal-clear results tailored to your needs.",
+      aboutPageTitle: "Our expertise speaks for itself in every pool",
+      experienceSubTitle: "Experience",
+      experienceTitle: "Extensive experience in the pool construction industry",
+      experienceDescription: "For over 30 years, we have been dedicated to serving our clients with excellence, building high-quality pools that stand the test of time. Our commitment to superior craftsmanship, attention to detail, and personalized service sets us apart, ensuring that every project we undertake exceeds expectations.",
+      buttonOrg: "Organizational Chart",
+      employeesSubTitle: "Employees",
+      employeesTitle: "The people responsible for making stunning pools",
+      employeesDescription: "We have a team of highly skilled professionals who are the backbone of our company. Their passion, dedication, and expertise ensure we deliver outstanding results every time. We take great pride in their commitment to excellence and their drive to go above and beyond for our clients.",
+
     }
   },
 
@@ -106,6 +116,15 @@ const resources = {
       contactPageFullTitle: "Tu alberca soñada empieza con una conversación",
       contactPageSubTitle: "Contacto",
       carrouselTitle: "Solamente usamos los mejores productos",
+      aboutIntroduction: "Diseñamos, construimos y mantenemos albercas de alta calidad, ofreciendo soluciones expertas para proyectos residenciales y comerciales. Desde la construcción hasta el cuidado del agua, garantizamos excelencia, durabilidad y resultados cristalinos adaptados a tus necesidades.",
+      aboutPageTitle: "Nuestra experiencia habla por sí misma en cada alberca",
+      experienceSubTitle: "Experiencia",
+      experienceTitle: "Amplia experiencia en la industria de la construcción de albercas",
+      experienceDescription: "Durante más de 30 años, nos hemos dedicado a brindar un servicio excepcional a nuestros clientes, construyendo albercas de la más alta calidad que perduran en el tiempo. Nuestro compromiso con la excelencia, la atención al detalle y un servicio personalizado nos distingue, garantizando que cada proyecto supere las expectativas.",
+      buttonOrg: "Organigrama",
+      employeesSubTitle: "Empleados",
+      employeesTitle: "Las personas responsables de hacer albercas impresionantes",
+      employeesDescription: "Contamos con un equipo de profesionales altamente capacitados que son la columna vertebral de nuestra empresa. Su pasión, dedicación y experiencia garantizan resultados excepcionales en todo momento. Nos enorgullece su compromiso con la excelencia y su determinación por superarse a sí mismos por nuestros clientes."
     }
   }
 };

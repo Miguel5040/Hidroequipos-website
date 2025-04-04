@@ -1,0 +1,113 @@
+:root {
+  --bar-widht: 40px;
+  --bar-height: 5px;
+  --hamburger-gap: 6px;
+  --background: #333;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+  --x-width: calc((var(--hamburger-height) * 1.41421356237));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid black;
+  box-shadow: 0 0 0 1px white;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-widht);
+  height: var(--bar-height);
+  background-color: var(--background);
+  border-radius: 9999px;
+  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+  transform-origin: right center;
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.hamburger-menu:has(input:checked) {
+  --background: white;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) /2);
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  translate: 100%;
+  transition: translate var(--animation-timing);
+  max-height: 100vh;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-gap) + 4rem);
+  /* background-color: #0e6982; */
+  background-color: #1aa3c8;
+  min-width: 250px;
+  z-index: 9;
+  padding-left: 2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding-bottom: calc(var(--hamburger-height) + var(--hamburger-gap) + 6rem);
+  width: max-content;
+}
+
+.sidebar nav div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar nav div select {
+  background-color: transparent;
+  font-size: large;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidebarOpen {
+  translate: 0;
+}
